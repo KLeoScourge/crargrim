@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CRARGRIM</title>
+  <base href="">
+  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <script src="index.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets\LogoCrargrim.png">
+</head>
+<header style="position: fixed; top: 0; width: 100%; z-index: 1;" >
+<nav class="navbar" style="background-color: #bdbdbd;">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="assets\LogoCrargrim.png" alt="CRARGRIM" width="60" height="50">
+    </a>
+    <h2>Crargrim: Diseño, Arte Y Cuero</h2>
+    <a class="navbar-brand" href="#">
+        <img src="assets\LogoCrargrim.png" alt="CRARGRIM" width="60" height="50">
+    </a>
+    </div>
+</nav>
+</header>
+<div class="social-bar">
+    <a href="https://twitter.com/crargrim?t=iJQkxb6Of1jlh0IZAcU_Ng&s=09" class="icon icon-twitter icono t-bar" target="_blank"></a>
+    <a href="https://instagram.com/claus_leo1206?igshid=MzNlNGNkZWQ4Mg==" class="icon icon-instagram icono i-bar" target="_blank"></a>
+    <a href="https://www.facebook.com/profile.php?id=100091925882660&mibextid=ZbWKwL" class="icon icon-facebook icono f-bar" target="_blank"></a>
+</div>
+<body class="fondo" onload="mostrarPerproductos(), mostrarVehproductos()">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <div class="container cont-fondo home">
+        <div class="home">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="assets\Collage01.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="assets\Collage02.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="assets\Collage03.png" class="d-block w-100" alt="...">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid cont-fondo">
+        <div class="productions">
+            <h1>Productions</h1>
+            <div class="container-fluid Menu-selcolor justify-content-center align-items-center">
+                <nav class="nav nav-pills nav-justified">
+                    <a class="nav-item btn-neon" onclick="personales()">PERSONALES</a>
+                    <a class="nav-item btn-neon" onclick="motocicleta()">MOTOCICLETA</a>
+                </nav>
+            </div>
+            <br>
+            <div id="ProdPersonales" style="display: none;">
+                <div class="gallery" id="productosper"></div>
+            </div>
+            <div id="ProdVehiculares" style="display: none;">
+                <div class="gallery" id="productosveh"></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid cont-fondo">
+        <div class="container-fluid Menu-selcolor justify-content-center align-items-center">
+        <br>
+        <div class="contact-content">
+            <h1 class="logo">¡Contacta<span>nos!</span></h1>
+            <br>
+            <div class="contact-wrapper">
+            <div class="contact-info">
+                <h2>CRARGRIM</h2>
+                <br>
+                <ul>
+                <li class="phone">
+                    <img src="assets\phone-contact.png">
+                    <i>&nbsp;&nbsp;601-4833542</i>
+                </li>
+                <li class="mobile">
+                    <img src="assets\mobile-contact.png">
+                    <i>&nbsp;&nbsp;&nbsp;3246693883</i>
+                </li>
+                <li class="email">
+                    <img src="assets\email-contact.png">
+                    <i>&nbsp;&nbsp;CRARGRIM@gmail.com</i>
+                </li>
+                </ul>
+                <p>CRARGRIM siempre está en constante crecimiento,
+                es por eso que con tu apoyo mejoramos la experiencia de
+                nuestros clientes que cuentan con nuestro servicio.</p>
+                <p>CRARGRIM</p>
+            </div>
+            <div class="buy-info">
+                <h2>Pago Online</h2>
+                <p>escanea el QR</p>
+                <div class="column-2 contact">
+                <div class="text-center">
+                    <h3>Nequi</h3>
+                    <img src="assets\CodigoQRNequi.jpeg" class="rounded">
+                    <p>O por medio del número para Nequi</p>
+                    <h4>3246693883</h4>
+                </div>
+                <div class="text-center">
+                    <h3>Daviplata</h3>
+                    <img src="assets\CodigoQRDaviPlata.jpeg" class="rounded">
+                    <p>O por medio del número para Daviplata</p>
+                    <h4>3246693883</h4>
+                </div>
+                </div>
+                <br/>
+                <div class="Adevertencia-Area">
+                <div class="alert alert-warning" role="alert">
+                    Actualmente los servicios a domicilio de CRARGRIM se encuentran únicamente en Bogotá D.C. - Colombia
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <br>
+        </div>
+    </div>     
+</body>
+</html>
