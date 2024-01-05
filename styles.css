@@ -67,7 +67,7 @@
   
   }
   .fondo{
-    background-color: rgb(99, 44, 0);
+    background-image: url("assets/Fondo_Madera.jpg");
   }
   .home{
     padding-top: 46px;
@@ -86,7 +86,7 @@
     height: 600px;
   }
   .btn-neon{
-    background-color: #bdbdbd;
+    background-color: #1100ff;
     display: inline-block;
     padding: 15px 30px;
     color: #fff;
@@ -98,7 +98,7 @@
   }
   .btn-neon:hover{
     cursor: pointer;
-    background: #1100ff;
+    background: #0b00ac;
   }
   .cont-fondo{
     background-color: rgb(0, 0, 0);
@@ -166,6 +166,22 @@
   .contact-content{
     max-width: 1170;
     padding: 1.5em 3em;
+  }
+  .logo{
+    color: #e5e5e5;
+    text-align: center;
+    font-size: 3em;
+  }
+  .logo span{
+    color: #0b00ac;
+  }
+  .logo_art{
+    color: #e5e5e5;
+    text-align: center;
+    font-size: 2.5em;
+  }
+  .logo_art span{
+    color: #0b00ac;
   }
   @media (max-width: 1300px){
     .gallery{
@@ -267,6 +283,16 @@
       width: 25px;
       height: 20px;
     }
+    .logo_art{
+      color: #e5e5e5;
+      text-align: center;
+      font-size: 2em;
+    }
+    .logo{
+      color: #e5e5e5;
+      text-align: center;
+      font-size: 2.5em;
+    }
   }
   @media (min-width:367px){
     .wrapper ul li{
@@ -281,12 +307,3 @@
       margin-top: 15px;
     }
   }
-  .logo{
-    color: #e5e5e5;
-    text-align: center;
-    font-size: 3em;
-  }
-  .logo span{
-    color: #ae0000;
-  }
-  
